@@ -581,6 +581,12 @@ export default function App() {
             </div>
           )}
         </main>
+        {/* Developer Signature */}
+<div className="w-full py-6 mt-8 text-center">
+  <p className="text-xs text-gray-500 opacity-60 hover:opacity-100 transition-opacity duration-300">
+    © 2026 Kelly Solutions
+  </p>
+</div>
       </div>
     </LeagueProvider>
   );
