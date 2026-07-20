@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo, createContext, useContext } from 'react';
 import { Trophy, Calendar, BarChart3, ShieldCheck, Plus, CheckCircle, Clock, Trash2, Edit3, ChevronRight, Goal } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import { supabase } from './supabase';
 
 // ==========================================
@@ -587,6 +588,7 @@ export default function App() {
     © 2026 Kelly Solutions
   </p>
 </div>
+<Analytics />
       </div>
     </LeagueProvider>
   );
