@@ -115,7 +115,7 @@ const Header = ({ currentView, setCurrentView, user }) => (
         <div className="bg-green-600 text-white p-2 rounded-lg">
           <Goal size={24} />
         </div>
-        <h1 className="text-xl font-bold text-green-900 hidden sm:block">ASES HOD Cup</h1>
+        <h1 className="text-lg sm:text-xl font-bold text-green-900">ASES HOD CUP 26</h1>
       </div>
       
       {user && (
