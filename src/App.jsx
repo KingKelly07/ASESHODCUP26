@@ -305,14 +305,6 @@ const PublicDashboard = () => {
   const [activeTab, setActiveTab] = useState('table');
   const { loading } = useContext(LeagueContext);
   
-
-const PublicDashboard = () => {
-
-
-  
-  const [activeTab, setActiveTab] = useState('table');
-  const { loading } = useContext(LeagueContext);
-  
   if (loading) return <div className="text-center py-20 text-green-600 font-semibold">Loading Live Data...</div>;
 
   return (
@@ -339,7 +331,6 @@ const PublicDashboard = () => {
     </div>
   );
 };
-
 // --- ADMIN PANEL VIEWS ---
 
 const MatchEditorForm = ({ match, onClose }) => {
@@ -627,5 +618,4 @@ export default function App() {
       </div>
     </LeagueProvider>
   );
-}
-    }
+} 
