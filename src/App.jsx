@@ -281,10 +281,21 @@ const PublicDashboard = () => {
   const [activeTab, setActiveTab] = useState('table');
   const { loading } = useContext(LeagueContext);
   
+
+const PublicDashboard = () => {
+
+
+  
+  const [activeTab, setActiveTab] = useState('table');
+  const { loading } = useContext(LeagueContext);
+  
   if (loading) return <div className="text-center py-20 text-green-600 font-semibold">Loading Live Data...</div>;
 
   return (
     <div className="max-w-6xl mx-auto p-4 py-8">
+
+      <FinalsBanner/>
+      
       <div className="flex flex-wrap gap-2 mb-8 border-b border-gray-200 pb-4">
         {[
           { id: 'table', label: 'League Table', icon: Trophy },
@@ -593,3 +604,4 @@ export default function App() {
     </LeagueProvider>
   );
 }
+    }
