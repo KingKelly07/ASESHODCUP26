@@ -277,6 +277,30 @@ const StatsView = () => {
   );
 };
 
+const FinalsBanner = () => (
+  <div className="relative bg-gradient-to-tr from-green-900 via-green-800 to-green-900 rounded-2xl p-6 mb-8 overflow-hidden shadow-2xl border border-yellow-500/50">
+    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-yellow-500/20 via-transparent to-transparent pointer-events-none"></div>
+    
+    <div className="relative z-10 flex flex-col items-center text-center">
+      <div className="bg-yellow-500/20 p-3 rounded-full mb-3 backdrop-blur-sm border border-yellow-500/30">
+        <Trophy size={32} className="text-yellow-400" />
+      </div>
+      <p className="text-yellow-400 font-bold tracking-[0.2em] text-xs sm:text-sm uppercase mb-1">
+        The Grand Finale
+      </p>
+      <h2 className="text-3xl sm:text-5xl font-black text-white uppercase tracking-tight mb-4 drop-shadow-lg">
+        ASES HOD CUP 26
+      </h2>
+      
+      <div className="flex items-center gap-3 sm:gap-6 bg-white/10 px-6 sm:px-8 py-3 sm:py-4 rounded-xl backdrop-blur-md border border-white/20 shadow-inner">
+        <span className="text-white font-bold text-xl sm:text-3xl">500LVL</span>
+        <span className="text-yellow-400 font-black text-sm px-2">VS</span>
+        <span className="text-white font-bold text-xl sm:text-3xl">200LVL</span>
+      </div>
+    </div>
+  </div>
+);
+
 const PublicDashboard = () => {
   const [activeTab, setActiveTab] = useState('table');
   const { loading } = useContext(LeagueContext);
